@@ -1,0 +1,8 @@
+composer create-project  --prefer-dist  laravel/laravel usermanagementsystem
+
+cp public/.htaccess .
+mv server.php index.php
+
+php artisan make:controller UserController -r -mUser
+
+php artisan make:request StoreUserRequest
